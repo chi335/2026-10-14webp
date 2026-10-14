@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>객체생성및활용</title>
+</head>
+
+<body>
+    <h3>객체생성및활용</h3>
+    <hr>
+    <script>
+        // Date 객체 생성
+        let today = new Date();
+        // Date 객체의 toLocaleString() 메소드 호출
+        document.write("현재 시간: " + today.toLocaleString() + "<br>");
+        
+        // String 객체 생성 (new와 String 사이에 공백 추가)
+        let mystr = new String("자바스크립트공부하기");
+        // 또는 리터럴 방식을 사용해도 동일하게 동작합니다: let mystr = "자바스크립트공부하기";
+        
+        document.write("mystr의 내용: " + mystr + "<br>");
+        document.write("mystr의 길이: " + mystr.length + "<br>");
+        // mystr.length = 10; // 이 문장은 읽기 전용 속성이므로 변경할 수 없어 오류가 발생합니다.
+    </script>
+</body>
+
+</html>
