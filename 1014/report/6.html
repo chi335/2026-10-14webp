@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>문자열 분할</title>
+</head>
+<body>
+    <h3>문자열 분할</h3>
+    <hr>
+    <script>
+        // 사용자로부터 문자열 입력받기
+        let input = prompt("문자열 입력");
+
+        // '&' 문자를 기준으로 분할하여 배열로 저장
+        let array = input.split("&");
+
+        // 분할된 문자열 각각 출력
+        for (let i = 0; i < array.length; i++) {
+            document.write(array[i] + "<br>");
+        }
+    </script>
+</body>
+</html>

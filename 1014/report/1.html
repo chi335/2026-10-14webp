@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>난수</title>
+</head>
+<body>
+    <h3>난수 10 개 생성</h3>
+    <hr>
+    <script>
+        let n = []; // 배열 n 선언
+
+        // 1. 난수 10개 생성하여 배열에 저장 (1 ~ 100)
+        for (let i = 0; i < 10; i++) {
+            let x = Math.floor(Math.random() * 100) + 1;
+            n[i] = x;
+        }
+
+        // 2. 배열의 모든 요소 출력
+        for (let i = 0; i < 10; i++) {
+            document.write(n[i] + " ");
+        }
+
+        document.write("<hr>");
+
+        // 3. 제일 큰 수 찾기
+        let big = n[0]; // big은 제일 큰 수 저장
+        for (let i = 0; i < 10; i++) {
+            if (n[i] > big) {
+                big = n[i];
+            }
+        }
+        document.write("제일 큰 수는 " + big);
+        document.write("<hr>");
+
+        // 4. 배열 정렬 및 출력
+        n.sort(); // 알파벳/문자열 순서 정렬
+        for (let i = 0; i < 10; i++) {
+            document.write(n[i] + " ");
+        }
+    </script>
+</body>
+</html>
